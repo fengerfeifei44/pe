@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>健康教育资讯系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<div class="nav">
+    <div class="content clear">
+        <a href="http://www.huimei.net/"><img src="images/logo-x.png" alt="惠每医疗"></a>
+        <h1>惠每健康管理中心 健康教育资讯系统</h1>
+        <!--<a href=""><img src="images/logo-x.png" alt="惠每医疗"></a>-->
+    </div>
+</div>
+<div class="tab">
+    <div class="select">
+        <ul id="select_tab">
+            <li class=" current">了解症状</li>
+            <li >应对疾病</li>
+            <li >准备检查</li>
+        </ul>
+    </div>
+</div>
+<div class="content clear" id="symptoms_tab">
+    <div class=" detail">
+        <ul>
+            <li>
+
+                <div class="symptoms clear">
+                    <a href="javascript:;">黄舌</a>
+                    <a href="javascript:;">血精</a>
+                    <a href="javascript:;">高尿酸血症</a>
+                    <a href="javascript:;">乳房肿块</a>
+                    <a href="javascript:;">阴茎弯曲</a>
+                    <a href="javascript:;">低血钾（低血钾症）</a>
+                    <a href="javascript:;">双手发冷</a>
+                    <a href="javascript:;">黄舌</a>
+                    <a href="javascript:;">血精</a>
+                    <a href="javascript:;">高尿酸血症</a>
+                    <a href="javascript:;">乳房肿块</a>
+                    <a href="javascript:;">阴茎弯曲</a>
+
+                </div>
+                <div class="page clear">
+                    <div class="next"></div>
+                    <div class="last"></div>
+                    <ul>
+                        <li><a href="javascript:;" class="active">1</a></li>
+                        <li><a href="javascript:;">2</a></li>
+                        <li><a href="javascript:;">3</a></li>
+                        <li><a href="javascript:;">4</a></li>
+                        <li><a href="javascript:;">5</a></li>
+                        <li><a href="javascript:;">6</a></li>
+                        <li><a href="javascript:;">7</a></li>
+                        <li><a href="javascript:;">8</a></li>
+                        <li><a href="javascript:;">9</a></li>
+                    </ul>
+                    <div class="first"></div>
+                    <div class="prv"></div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <div class=" detail">
+        <ul>
+            <li>
+                <div class="symptoms clear">
+                    <a href="javascript:;">黄舌</a>
+                    <a href="javascript:;">血精</a>
+                    <a href="javascript:;">高尿酸血症</a>
+                    <a href="javascript:;">乳房肿块</a>
+                    <a href="javascript:;">阴茎弯曲</a>
+                    <a href="javascript:;">低血钾（低血钾症）</a>
+                    <a href="javascript:;">阴茎弯曲</a>
+                    <a href="javascript:;">低血钾（低血钾症）</a>
+                    <a href="javascript:;">阴茎弯曲</a>
+                    <a href="javascript:;">低血钾（低血钾症）</a>
+
+
+                </div>
+
+
+            </li>
+        </ul>
+    </div>
+    <div class=" detail">
+        <ul>
+            <li>
+
+                <div class="symptoms clear">
+                    <a href="javascript:;">黄舌</a>
+                    <a href="javascript:;">血精</a>
+                    <a href="javascript:;">高尿酸血症</a>
+                    <a href="javascript:;">乳房肿块</a>
+                    <a href="javascript:;">阴茎弯曲</a>
+                    <a href="javascript:;">低血钾（低血钾症）</a>
+                    <a href="javascript:;">双手发冷</a>
+                    <a href="javascript:;">血精</a>
+                    <a href="javascript:;">黄舌</a>
+                    <a href="javascript:;">血精</a>
+
+
+                </div>
+                <div class="page clear">
+                    <div class="next"></div>
+                    <div class="last"></div>
+                    <ul>
+                        <li><a href="javascript:;" class="active">1</a></li>
+                        <li><a href="javascript:;">2</a></li>
+                        <li><a href="javascript:;">3</a></li>
+                        <li><a href="javascript:;">4</a></li>
+                        <li><a href="javascript:;">5</a></li>
+                        <li><a href="javascript:;">6</a></li>
+                        <li><a href="javascript:;">7</a></li>
+                        <li><a href="javascript:;">8</a></li>
+                        <li><a href="javascript:;">9</a></li>
+                    </ul>
+                    <div class="first"></div>
+                    <div class="prv"></div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="bottom">
+    增值电信业务经营许可证 京B2-20170229 京ICP备16039627号
+</div>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery.tabso_yeso.js"></script>
+<script>
+    //判断页面是否少于一屏，少于一屏页面底部自动定位在下边
+   /* $(function () {
+        var bodyHeight=$("body").height();
+        var windowHeight=$(window).height();
+        if(bodyHeight<windowHeight){
+            console.log(1)
+            $(".bottom").css({
+                "position":"fixed",
+                "left":"0",
+                "bottom":"0"
+            })
+        }
+    })*/
+
+    $(".category label").click(function () {
+        if($(this).children($("input[type=checkbox]")).prop("checked")==true){
+            $(this).addClass("on")
+        }else {
+           $(this).removeClass("on")
+        }
+
+    })
+    //选项卡
+    $("#select_tab").tabso({
+        cntSelect:"#symptoms_tab",
+        tabEvent:"click",
+        tabStyle:"fade"
+    });
+</script>
+</body>
+</html>

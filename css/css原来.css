@@ -1,0 +1,218 @@
+body, div, h1, h2, h3, h4, h5, h6, ul,  li,  p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font:14px  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    font-family: "Microsoft YaHei" !important;
+    user-select: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: 500;
+}*/
+
+img {
+    vertical-align: top;
+    border: none;
+}
+img, input, select, textarea {
+    vertical-align: top;
+    outline: none;
+}
+
+.clear {
+    zoom: 1;
+}
+.clear:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/*以上为重置样式*/
+.content{
+    margin: 0 auto;
+    width: 1200px;
+}
+.nav{
+    border-bottom: 1px solid #1a598c;
+    height: 118px;
+    line-height: 118px;
+    background:#e8f3ff ;
+}
+.nav a,.nav h1{
+    float: left;
+}
+.nav h1{
+    font-weight: 100;
+    color: #1a598c;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 5px;
+    font-family:"微软雅黑"
+}
+.nav a:nth-child(1) img{
+    margin-right: 125px;
+    height: 50px;
+    vertical-align: middle;
+}
+.nav a:nth-of-type(2){
+    float: right;
+    margin-top: 22px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+}
+.nav a:nth-of-type(2) img{
+
+    width: 70px;
+   /* height: 70px;*/
+    border-radius: 50%;
+    vertical-align: top;
+
+}
+.left{
+    float: left;
+    line-height: 1;
+    width: 800px;
+}
+.left li{
+    margin-top: 30px;
+    border-top: 8px solid #b2d7ff;
+    padding: 30px 28px 35px 20px;
+    background:#e8f3ff ;
+    box-shadow: 2px 4px 18px rgba(0,0,0,.2);
+}
+.left li strong{
+    font-weight: 100;
+    margin-top: 8px;
+    display: block;
+    font-size: 14px;
+    line-height: 35px;
+    color: #1a598c;
+}
+.left li strong:nth-of-type(2){
+    font-size: 12px;
+    margin-top: 4px;
+}
+.left li input{
+    border: 1px solid #cfcfcf;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width:166px ;
+    height: 30px;
+    background: #e8f3ff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.left li .search{
+    display: inline-block;
+    margin-left: 3px;
+    width: 34px;
+    height: 30px;
+    background: url("../images/search.png") no-repeat;
+    cursor: pointer;
+}
+.left li h3{
+    font-weight: 100;
+    margin-bottom: 18px;
+    font-size: 27px;
+    color: #1a598c;
+    font-family: "Microsoft YaHei", "微软雅黑";
+    letter-spacing: 3px;
+}
+.left li .instruction{
+    line-height: 24px;
+   color: #444444;
+
+}
+.left li .category input[type=checkbox]{
+    display: none;
+}
+.left li .category label{
+    margin-right: 14px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+    color: #444444;
+    text-align: center;
+    cursor: pointer;
+}
+.left li .category label.on{
+    border: 1px solid #fff;
+    color: #fff;
+    background: #1a598c;
+}
+.left li a.start_visit{
+    float: right;
+    margin-top: 20px;
+    width: 195px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #1a598c;
+    border-radius: 5px;
+
+}
+.right{
+    float: right;
+    width: 350px;
+}
+.right li{
+    margin-top: 30px;
+}
+.right li h5{
+    font-weight: 100;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-left: 25px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    color: #fff;
+    background: #2268a0;
+}
+.right li .self{
+    border: 1px solid #2268a0;
+    padding: 20px 24px 42px;
+}
+
+
+.right li .self ul{
+    padding-left: 40px;
+}
+.right li .self ul li{
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    list-style: disc;
+}
+.right li .self ol{
+    list-style-type: decimal
+}
+
+.bottom{
+    margin-top: 60px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #004444;
+    text-align: center;
+    background: #e8f3ff;
+}
